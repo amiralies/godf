@@ -51,6 +51,8 @@ func main() {
 		Terminal: getValue(dfTerminal, plainDF.Terminal),
 	}
 
-	fmt.Println(filename)
-	fmt.Println(df.toString())
+	writeErr := df.write(filename)
+	if writeErr != nil {
+		panic(writeErr)
+	}
 }
