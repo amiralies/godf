@@ -35,10 +35,10 @@ func main() {
 
 	dfType := read(fmt.Sprintf("Type: [%s]", plainDF.Type))
 	dfEncoding := read(fmt.Sprintf("Encoding: [%s]", plainDF.Encoding))
-	dfName := read(fmt.Sprintf("Name: "))
-	dfComment := read(fmt.Sprintf("Comment: "))
-	dfExec := read(fmt.Sprintf("Exec: "))
-	dfIcon := read(fmt.Sprintf("Icon: "))
+	dfName := read(fmt.Sprintf("Name:"))
+	dfComment := read(fmt.Sprintf("Comment:"))
+	dfExec := read(fmt.Sprintf("Exec:"))
+	dfIcon := read(fmt.Sprintf("Icon:"))
 	dfTerminal := read(fmt.Sprintf("Terminal: [%s]", plainDF.Terminal))
 
 	df := DesktopFile{
