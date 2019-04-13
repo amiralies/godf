@@ -30,7 +30,7 @@ func newDF() DesktopFile {
 }
 
 func (df DesktopFile) toString() string {
-	return fmt.Sprintf("Type=%s\nEncondig=%s\nName=%s\nComment=%s\nExec=%s\nIcon=%s\nTerminal=%s\n",
+	return fmt.Sprintf("[Desktop Entry]\nType=%s\nEncondig=%s\nName=%s\nComment=%s\nExec=%s\nIcon=%s\nTerminal=%s\n",
 		df.Type, df.Encoding, df.Name, df.Comment, df.Exec, df.Icon, df.Terminal)
 }
 
