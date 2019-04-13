@@ -19,3 +19,7 @@ var defaultDF = DesktopFile{
 	Icon:     "",
 	Terminal: "False",
 }
+
+func newDF() DesktopFile {
+	return defaultDF
+}
