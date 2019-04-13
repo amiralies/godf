@@ -16,3 +16,6 @@
 /vendor/
 /Godeps/
 
+# Build binary
+godf
+
