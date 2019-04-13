@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"io/ioutil"
+)
 
 type DesktopFile struct {
 	Type     string
@@ -29,4 +32,8 @@ func newDF() DesktopFile {
 func (df DesktopFile) toString() string {
 	return fmt.Sprintf("Type=%s\nEncondig=%s\nName=%s\nComment=%s\nExec=%s\nIcon=%s\nTerminal=%s\n",
 		df.Type, df.Encoding, df.Name, df.Comment, df.Exec, df.Icon, df.Terminal)
+}
+
+func (df DesktopFile) write(filename string) error {
+	return ioutil.WriteFile(filename, []byte(df.toString()), 0666)
 }
