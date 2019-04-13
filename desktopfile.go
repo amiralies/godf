@@ -10,7 +10,7 @@ type DesktopFile struct {
 	Terminal string
 }
 
-const defaultDF = DesktopFile{
+var defaultDF = DesktopFile{
 	Type:     "Application",
 	Encoding: "UTF-8",
 	Name:     "",
