@@ -22,9 +22,9 @@ func read(description string) string {
 func getValue(value, defaultValue string) string {
 	if value != "" {
 		return value
-	} else {
-		return defaultValue
 	}
+
+	return defaultValue
 }
 
 func main() {

@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 )
 
+// DesktopFile is the struct representation of a desktop file
 type DesktopFile struct {
 	Type     string
 	Encoding string
